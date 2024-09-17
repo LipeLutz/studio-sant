@@ -1,0 +1,39 @@
+/* Customiza todas as barras de scroll dentro do elemento */
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da trilha */
+  border-radius: 10px; /* Arredonda os cantos da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cor da "mão" */
+  border-radius: 10px; /* Arredonda os cantos da "mão" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor da "mão" quando hover */
+}
+
+.sobre {
+  background-image: url("https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_SOBRE_BAIXA.webp?raw=true");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sobre iframe {
+  border-radius: 5px;
+  background-color: black;
+}
+
+.d-flex-justify-space-between {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,493 @@
+[
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_PROJETO_Baixa.webp?raw=true",
+      "Nome": "Nome 12",
+      "Titulo": "projetos.",
+      "Categoria": "Principal",
+      "id": "1"
+    },
+
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_SOBRE_BAIXA.webp?raw=true",
+      "Nome": "Nome 13",
+      "Titulo": "sobre.",
+      "Categoria": "Principal",
+      "id": "2"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_ARTE-E-GALERIA_baixa.webp?raw=true",
+      "Nome": "Nome 14",
+      "Titulo": "arte & design.",
+      "Categoria": "Principal",
+      "id": "3"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_CONTATO_baixa.webp?raw=true",
+      "Nome": "Nome 15",
+      "Titulo": "contato.",
+      "Categoria": "Principal",
+      "id": "4"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-projetos-webp/jpeg-optimizer_01.webp?raw=true",
+      "Nome": "Nome 5",
+      "Titulo": "Titulo 5",
+      "Categoria": "Carousel",
+      "id": "5"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-projetos-webp/jpeg-optimizer_02.webp?raw=true",
+      "Nome": "Nome 6",
+      "Titulo": "Titulo 6",
+      "Categoria": "Carousel",
+      "id": "6"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-projetos-webp/jpeg-optimizer_03.webp?raw=true",
+      "Nome": "Nome 7",
+      "Titulo": "Titulo 7",
+      "Categoria": "Carousel",
+      "id": "7"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-projetos-webp/jpeg-optimizer_04.webp?raw=true",
+      "Nome": "Nome 8",
+      "Titulo": "Titulo 8",
+      "Categoria": "Carousel",
+      "id": "8"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-projetos-webp/jpeg-optimizer_05.webp?raw=true",
+      "Nome": "Nome 9",
+      "Titulo": "Titulo 9",
+      "Categoria": "Carousel",
+      "id": "9"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-projetos-webp/jpeg-optimizer_06.webp?raw=true",
+      "Nome": "Nome 10",
+      "Titulo": "Titulo 10",
+      "Categoria": "Carousel",
+      "id": "10"
+    },
+    {
+      "url": "https://github.com/LucasLatsch/Img/blob/main/Equipe/jpeg-optimizer_JORGE%20ARAUJO.jpg?raw=true",
+      "Nome": "Jorge Araujo",
+      "Titulo": "Cargo",
+      "Categoria": "Perfil",
+      "id": "12"
+    },
+    {
+      "url": "https://github.com/LucasLatsch/Img/blob/main/Equipe/jpeg-optimizer_Jhorran%20Sant.jpg?raw=true",
+      "Nome": "Jhorran Sant",
+      "Titulo": "Cargo",
+      "Categoria": "Perfil",
+      "id": "13"
+    },
+    {
+      "url": "https://github.com/LucasLatsch/Img/blob/main/Equipe/jpeg-optimizer_Lucas%20Latsch.jpg?raw=true",
+      "Nome": "Lucas Latsch",
+      "Titulo": "Cargo",
+      "Categoria": "Perfil",
+      "id": "14"
+    },
+    {
+      "url": "https://github.com/LucasLatsch/Img/blob/main/Equipe/jpeg-optimizer_MATHEUS%20CAMARA.jpg?raw=true",
+      "Nome": "Matheus Camara",
+      "Titulo": "Cargo",
+      "Categoria": "Perfil",
+      "id": "15"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_74.jpg?raw=true",
+      "Nome": "Nome 16",
+      "Titulo": "Titulo 16",
+      "Categoria": "Projeto",
+      "id": "16"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_51.jpg?raw=true",
+      "Nome": "Nome 17",
+      "Titulo": "Titulo 17",
+      "Categoria": "Projeto",
+      "id": "17"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_96.jpg?raw=true",
+      "Nome": "Nome 18",
+      "Titulo": "Titulo 18",
+      "Categoria": "Projeto",
+      "id": "18"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_105.jpg?raw=true",
+      "Nome": "Nome 19",
+      "Titulo": "Titulo 19",
+      "Categoria": "Projeto",
+      "id": "19"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_90.jpg?raw=true",
+      "Nome": "Nome 20",
+      "Titulo": "Titulo 20",
+      "Categoria": "Projeto",
+      "id": "20"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_54.jpg?raw=true",
+      "Nome": "Nome 21",
+      "Titulo": "Titulo 21",
+      "Categoria": "Projeto",
+      "id": "21"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_63.jpg?raw=true",
+      "Nome": "Nome 22",
+      "Titulo": "Titulo 22",
+      "Categoria": "Projeto",
+      "id": "22"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_52.jpg?raw=true",
+      "Nome": "Nome 23",
+      "Titulo": "Titulo 23",
+      "Categoria": "Projeto",
+      "id": "23"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_95.jpg?raw=true",
+      "Nome": "Nome 24",
+      "Titulo": "Titulo 24",
+      "Categoria": "Projeto",
+      "id": "24"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_65.jpg?raw=true",
+      "Nome": "Nome 25",
+      "Titulo": "Titulo 25",
+      "Categoria": "Projeto",
+      "id": "25"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_93.jpg?raw=true",
+      "Nome": "Nome 26",
+      "Titulo": "Titulo 26",
+      "Categoria": "Projeto",
+      "id": "26"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_102.jpg?raw=true",
+      "Nome": "Nome 27",
+      "Titulo": "Titulo 27",
+      "Categoria": "Projeto",
+      "id": "27"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_100.jpg?raw=true",
+      "Nome": "Nome 28",
+      "Titulo": "Titulo 28",
+      "Categoria": "Projeto",
+      "id": "28"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_59.jpg?raw=true",
+      "Nome": "Nome 29",
+      "Titulo": "Titulo 29",
+      "Categoria": "Projeto",
+      "id": "29"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_83.jpg?raw=true",
+      "Nome": "Nome 30",
+      "Titulo": "Titulo 30",
+      "Categoria": "Projeto",
+      "id": "30"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_57.jpg?raw=true",
+      "Nome": "Nome 31",
+      "Titulo": "Titulo 31",
+      "Categoria": "Projeto",
+      "id": "31"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_76.jpg?raw=true",
+      "Nome": "Nome 32",
+      "Titulo": "Titulo 32",
+      "Categoria": "Projeto",
+      "id": "32"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_55.jpg?raw=true",
+      "Nome": "Nome 33",
+      "Titulo": "Titulo 33",
+      "Categoria": "Projeto",
+      "id": "33"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_82.jpg?raw=true",
+      "Nome": "Nome 34",
+      "Titulo": "Titulo 34",
+      "Categoria": "Projeto",
+      "id": "34"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_97.jpg?raw=true",
+      "Nome": "Nome 5",
+      "Titulo": "Titulo 5",
+      "Categoria": "Projeto",
+      "id": "35"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_99.jpg?raw=true",
+      "Nome": "Nome 6",
+      "Titulo": "Titulo 6",
+      "Categoria": "Projeto",
+      "id": "36"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_80.jpg?raw=true",
+      "Nome": "Nome 7",
+      "Titulo": "Titulo 7",
+      "Categoria": "Projeto",
+      "id": "37"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_69.jpg?raw=true",
+      "Nome": "Nome 8",
+      "Titulo": "Titulo 8",
+      "Categoria": "Projeto",
+      "id": "38"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_70.jpg?raw=true",
+      "Nome": "Nome 9",
+      "Titulo": "Titulo 9",
+      "Categoria": "Projeto",
+      "id": "39"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_86.jpg?raw=true",
+      "Nome": "Nome 10",
+      "Titulo": "Titulo 10",
+      "Categoria": "Projeto",
+      "id": "40"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_75.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_68.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_61.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_73.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_103.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_53.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_78.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_50.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_71.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_67.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_79.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_64.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_81.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_98.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_87.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_66.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_58.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_94.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_72.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_92.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_88.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_101.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_89.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_104.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_85.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_56.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_84.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_91.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_77.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_62.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    },
+    {
+      "url": "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/Fotos%20projetos/jpeg-optimizer_60.jpg?raw=true",
+      "Nome": "Nome 11",
+      "Titulo": "Titulo 11",
+      "Categoria": "Projeto",
+      "id": "41"
+    }
+  ]

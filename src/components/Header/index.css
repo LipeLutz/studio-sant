@@ -1,0 +1,23 @@
+.btnClose {
+  font-size: 25px;
+  cursor: pointer;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.white {
+  color: white;
+}
+
+/* @media (min-width: 480px) {
+  .btnClose {
+    font-size: 5em;
+  }
+} */
+@media (max-width: 768px) {
+  .btnClose {
+    font-size: 3em;
+    margin: 10px;
+  }
+}

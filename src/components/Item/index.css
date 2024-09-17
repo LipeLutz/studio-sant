@@ -1,0 +1,33 @@
+.item {
+  width: 100vw;
+  height: 25vh;
+  padding: 10px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: all 0.8s ease;
+  align-content: end;
+}
+
+.item:hover {
+  filter: grayscale(0%);
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 250;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,16 @@
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://github.com/LucasLatsch/Img/blob/main/jpeg-optimizer_fundo-studio-jsant.jpg?raw=true");
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

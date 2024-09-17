@@ -1,0 +1,16 @@
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available; /* Substitua pelo valor desejado se necessário */
+  height: 100%;
+  justify-content: space-between;
+}
+
+.contato {
+  background-image: url("https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_CONTATO_baixa.webp?raw=true");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
