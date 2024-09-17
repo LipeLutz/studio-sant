@@ -13,6 +13,8 @@ function Principal() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [principalImages, setPrincipalImages] = useState([]);
 
+  //teste
+
   useEffect(() => {
     const fetchImages = async () => {
       try {
