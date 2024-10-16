@@ -6,6 +6,8 @@ import Header from "../Header";
 import { motion } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
+import fotos from '../../DATA/fotos.json';
+//import { CarouselArtDesign } from '../Carousel/CarouselArtDesign'
 
 export default function Projeto({ setSelectedItem }) {
   const expandedContentRef = useRef(null);
@@ -13,17 +15,35 @@ export default function Projeto({ setSelectedItem }) {
   const [showModal, setShowModal] = useState(false);
   const [selectedImg, setSelectedImg] = useState("");
   const [quadroImages, setQuadroImages] = useState([]);
+  const [carrosselBroto, setCarrosselBroto] = useState([])
+  const [carrosselNona, setCarrosselNona] = useState([])
+  const [carrosselQuadro1, setCarrosselQuadro1] = useState([])
+  const [carrosselQuadro2, setCarrosselQuadro2] = useState([])
+  const [selectedId, setSelectedId] = useState(null); // Estado para armazenar o item clicado
 
-  const [loadedImages, setLoadedImages] = useState([]);
+  const [loadedImages, setLoadedImages] = useState([])
+
+  console.log(selectedImg)
 
   useEffect(() => {
     const fetchImages = async () => {
       try {
+        const images = fotos.filter((foto) => foto.Categoria === "capa")
+        const broto = fotos.filter(foto => foto.Categoria === 'carrossel-broto')
+        const nona = fotos.filter(foto => foto.Categoria === 'carrossel-nona')
+        const quadro1 = fotos.filter(foto => foto.Categoria === 'capa-quadro1')
+        const quadro2 = fotos.filter(foto => foto.Categoria === 'capa-quadro2')
+        /*
         const response = await axios.get(
           "https://663e5f4de1913c4767977256.mockapi.io/Quadros"
         );
         const carouselImgs = response.data;
-        setQuadroImages(carouselImgs);
+        */
+        setQuadroImages(images);
+        setCarrosselBroto(broto)
+        setCarrosselNona(nona)
+        setCarrosselQuadro1(quadro1)
+        setCarrosselQuadro2(quadro2)
       } catch (error) {
         console.error("Error fetching images:", error);
       }
@@ -37,6 +57,10 @@ export default function Projeto({ setSelectedItem }) {
   const handleClick = () => {
     setSelectedItem(null);
     setExpanded(false);
+  };
+
+  const handleClick2 = (id) => {
+    setSelectedId(id); // Atualiza o id do item clicado
   };
 
   const handleVerMenosClick = () => {
@@ -67,20 +91,11 @@ export default function Projeto({ setSelectedItem }) {
       >
         <div className="inner-content">
           <Header handleClick={handleClick} color={"white"} />
-          <Row className="d-flex-justify-space-around">
-            <Carousel>
-              {quadroImages.map((item) => (
-                <Carousel.Item key={item.id}>
-                  <img
-                    loading="lazy"
-                    alt={item.title}
-                    width="100%"
-                    src={item.url}
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          </Row>
+
+          <div className="div-img-jhorran">
+            <img src="https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_ARTE-E-GALERIA_baixa.webp?raw=true" alt="" />
+          </div>
+
           <Row style={{ minHeight: "48px" }}>
             <Col className="d-flex-justify-space-around p-0 mt-2">
               {expanded ? (
@@ -150,11 +165,151 @@ export default function Projeto({ setSelectedItem }) {
           </Col>
         </Row>
       </motion.div>
-      <Modal show={showModal} onHide={closeModal} className="modal-content">
-        <Modal.Body className="teste-modal">
-          <img src={selectedImg} alt="Imagem" style={{ height: "90vh" }} />
+      <Modal show={showModal} onHide={closeModal}>
+        <Modal.Body>
+          <Carousel className="carousel-imgs">
+            {quadroImages.map((images) => {
+              if (selectedImg === 'https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true') {
+                return (
+                  carrosselBroto.map((broto) => (
+                    <Carousel.Item>
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+
+                      >
+                        <img
+                          loading="lazy"
+                          className="imgCarousel"
+                          src={broto.url}
+                        />
+                      </motion.div>
+                    </Carousel.Item>
+                  ))
+                )
+              }
+
+              if (selectedImg === 'https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true') {
+                return (
+                  carrosselNona.map((nona) => (
+                    <Carousel.Item>
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+                      >
+                        <img
+                          loading="lazy"
+                          alt={nona.title}
+                          src={nona.url}
+                        />
+                      </motion.div>
+                    </Carousel.Item>
+                  ))
+                )
+              }
+            })}
+          </Carousel>
+          <div>
+            <img loading="lazy" width="100%" src={
+              selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true" 
+              || selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true" 
+              ? ''  // Não exibe a imagem se for Mesa Broto ou Mesa Nona
+              : selectedImg  // Exibe qualquer outra imagem
+            } />
+          </div>
         </Modal.Body>
       </Modal>
     </>
   );
 }
+
+/*
+
+{quadroImages.map((images) => {
+              if (images.id === '72') {
+                return (
+                  carrosselBroto.map((broto) => (
+                    <Carousel.Item>
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+                      >
+                        
+                        <img
+                          loading="lazy"
+                          alt={broto.title}
+                          width="100%"
+                          src={broto.url}
+                        />
+                      </motion.div>
+                    </Carousel.Item>
+                  ))
+                )
+              }
+
+              if (images.id === '81') {
+                return (
+                  carrosselNona.map((nona) => (
+                    <Carousel.Item>
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+                      >
+                        {console.log(nona)}
+                        <img
+                          loading="lazy"
+                          alt={nona.title}
+                          src={nona.url}
+                        />
+                      </motion.div>
+                    </Carousel.Item>
+                  ))
+                )
+              }
+
+              if (images.id === '82') {
+                return (
+                  carrosselQuadro1.map((quadro1) => (
+                    <Carousel.Item>
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+                      >
+                        <img
+                          loading="lazy"
+                          alt={quadro1.title}
+                          width="100%"
+                          src={quadro1.url}
+                        />
+                      </motion.div>
+                    </Carousel.Item>
+                  ))
+                )
+              }
+
+              if (images.Nome === 'capa-quadro2') {
+                return (
+                  carrosselQuadro2.map((quadro2) => (
+                    <Carousel.Item>
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+                      >
+                        <img
+                          loading="lazy"
+                          alt={quadro2.title}
+                          width="100%"
+                          src={quadro2.url}
+                        />
+                      </motion.div>
+                    </Carousel.Item>
+                  ))
+                )
+              }
+            })}*/
