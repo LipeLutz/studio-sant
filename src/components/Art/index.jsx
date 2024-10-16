@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
 import "./index.css";
 import { Row, Col, Modal } from "react-bootstrap";
 import Header from "../Header";
@@ -19,9 +18,7 @@ export default function Projeto({ setSelectedItem }) {
   const [carrosselNona, setCarrosselNona] = useState([])
   const [carrosselQuadro1, setCarrosselQuadro1] = useState([])
   const [carrosselQuadro2, setCarrosselQuadro2] = useState([])
-  const [selectedId, setSelectedId] = useState(null); // Estado para armazenar o item clicado
 
-  const [loadedImages, setLoadedImages] = useState([])
 
   console.log(selectedImg)
 
@@ -57,10 +54,6 @@ export default function Projeto({ setSelectedItem }) {
   const handleClick = () => {
     setSelectedItem(null);
     setExpanded(false);
-  };
-
-  const handleClick2 = (id) => {
-    setSelectedId(id); // Atualiza o id do item clicado
   };
 
   const handleVerMenosClick = () => {
