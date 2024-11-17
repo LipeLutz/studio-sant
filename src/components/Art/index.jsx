@@ -6,7 +6,15 @@ import { motion } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import fotos from '../../DATA/fotos.json';
+import { register } from "swiper/element";
 //import { CarouselArtDesign } from '../Carousel/CarouselArtDesign'
+
+register()
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Projeto({ setSelectedItem }) {
   const expandedContentRef = useRef(null);
@@ -14,13 +22,9 @@ export default function Projeto({ setSelectedItem }) {
   const [showModal, setShowModal] = useState(false);
   const [selectedImg, setSelectedImg] = useState("");
   const [quadroImages, setQuadroImages] = useState([]);
-  const [carrosselBroto, setCarrosselBroto] = useState([])
+  const [imgIndex, setImgIndex] = useState(0 )
+  const [carrosselBroto, setCarrosselBroto1] = useState([])
   const [carrosselNona, setCarrosselNona] = useState([])
-  const [carrosselQuadro1, setCarrosselQuadro1] = useState([])
-  const [carrosselQuadro2, setCarrosselQuadro2] = useState([])
-
-
-  console.log(selectedImg)
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -37,10 +41,8 @@ export default function Projeto({ setSelectedItem }) {
         const carouselImgs = response.data;
         */
         setQuadroImages(images);
-        setCarrosselBroto(broto)
+        setCarrosselBroto1(broto)
         setCarrosselNona(nona)
-        setCarrosselQuadro1(quadro1)
-        setCarrosselQuadro2(quadro2)
       } catch (error) {
         console.error("Error fetching images:", error);
       }
@@ -71,6 +73,7 @@ export default function Projeto({ setSelectedItem }) {
   const closeModal = () => {
     setShowModal(false);
     setSelectedImg("");
+    setImgIndex(0)
   };
 
   return (
@@ -159,57 +162,93 @@ export default function Projeto({ setSelectedItem }) {
         </Row>
       </motion.div>
       <Modal show={showModal} onHide={closeModal}>
-        <Modal.Body>
-          <Carousel className="carousel-imgs">
-            {quadroImages.map((images) => {
-              if (selectedImg === 'https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true') {
-                return (
-                  carrosselBroto.map((broto) => (
-                    <Carousel.Item>
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 2 }}
+        <Modal.Body className="BodyModalArtDesign">
+          <div>
+            {selectedImg === 'https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true' && (
+              <div className="modalArtDesign">
+                <div className="divCarouselImgArtDesign">
+                  <span class="material-symbols-outlined" onClick={() => setImgIndex(imgIndex <= 0 ? 3 : imgIndex - 1)}>
+                    arrow_back_ios
+                  </span>
+                  <img src={carrosselNona[imgIndex].url} alt="" className="imgCarouselArt" />
+                  <span class="material-symbols-outlined" onClick={() => setImgIndex(imgIndex >= 3 ? 0 : imgIndex + 1)}>
+                    arrow_forward_ios
+                  </span>
+                </div>
+                <div className="sideTextModal">
 
-                      >
-                        <img
-                          loading="lazy"
-                          className="imgCarousel"
-                          src={broto.url}
-                        />
-                      </motion.div>
-                    </Carousel.Item>
-                  ))
-                )
-              }
+                  <h1>MESA DE CENTRO NONA</h1>
+                  <p>
+                    A mesa de centro nona, traz um contraponto bem sutil entre peso e leveza.
+                    Fica bem perceptível os materiais usados, como o peso do mármore nacional branco com cinza repartidos em nove pedaços e intercalados entre polidos
+                    e fosco. Criando assim, um interesse no topo da mesa e, ao mesmo tempo, sendo ele encaixado em uma caixa folheada natural de nogueira, topos em
+                    meia esquadria e chanfrados, levando uma sofisticação ao objeto; à leveza se diz pelo fato da mesa não estar diretamente em contato com o piso, pois
+                    ela tem uma base de 40x40x5 cm que traduz esta sensação de flutuar
+                  </p>
+                  <p>Consultar opções de materiais pois o produto possui outras variações de cores.</p>
+                  Medidas:
+                  <ul>
+                    <li>L 120 x P 120 x A 30cm</li>
+                    <li>L 100 x P 100 x A 30cm</li>
+                    <li>L 90 x P 90 x A 30cm</li>
+                  </ul>
+                  <p>
+                    <a href="https://3dwarehouse.sketchup.com/model/e4d43c35-6582-4092-ae77-cd2fcb666c11/Mesa-de-Centro-nona-design-brasileiro">
+                      Blocos 3D disponível (link)
+                    </a>
+                  </p>
+                </div>
+              </div>
 
-              if (selectedImg === 'https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true') {
-                return (
-                  carrosselNona.map((nona) => (
-                    <Carousel.Item>
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 2 }}
-                      >
-                        <img
-                          loading="lazy"
-                          alt={nona.title}
-                          src={nona.url}
-                        />
-                      </motion.div>
-                    </Carousel.Item>
-                  ))
-                )
-              }
-            })}
-          </Carousel>
+            )}
+
+            {selectedImg === 'https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true' && (
+              <div className="modalArtDesign">
+                <div className="divCarouselImgArtDesign">
+                  <span class="material-symbols-outlined" onClick={() => setImgIndex(imgIndex <= 0 ? 2 : imgIndex - 1)}>
+                    arrow_back_ios
+                  </span>
+                  <img src={carrosselBroto[imgIndex].url} alt="" className="imgCarouselArt" />
+                  <span class="material-symbols-outlined" onClick={() => setImgIndex(imgIndex >= 2 ? 0 : imgIndex + 1)}>
+                    arrow_forward_ios
+                  </span>
+                </div>
+                <div className="sideTextModal">
+                  <h1>MESA LATERAL BROTO</h1>
+                  <p>
+                    Nosso país é um dos mais ricos em cultura, dividido em 5 regiões diferentes nós temos um leque
+                    imenso de diversificação...
+                    Apresento a mesa broto, embasada nada mais que na nossa brasilidade, nas nossas raízes, nossa culinária!
+                  </p>
+                  <p>
+                    O topo do mobiliário é fabricado em mármore polido, no formato de um grão de feijão, acoplado nele temos um círculo de madeira
+                    natural que serve de apoio para apoiar o seu drink de preferência.
+                    Ela é toda sustentada por uma haste em inox cromado trazendo uma leveza para o grão.
+                  </p>
+                  <p>
+                    Sua base de sustentação é feita toda em concreto mas com a opção de ser em madeira natural, assim temos 2
+                    possibilidade, uma quente com o tom terroso da madeira trazendo um aconchego e uma fria com o
+                    tom acinzentado do cimento trazendo uma sobriedade para a mesa.
+                  </p>
+                  <p>Consultar opções de materiais pois o produto possui outras variações de cores.</p>
+                  <p>Medidas: L 25 x P 30 x A 47 cm</p>
+                  <p>
+                    <a href="https://3dwarehouse.sketchup.com/model/9f6b195f-3751-4976-b52a-43d6534de146/Mesa-Broto-Design-brasileiro">
+                      Blocos 3D disponível (link)
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+            )}
+          </div>
+
           <div>
             <img loading="lazy" width="100%" src={
-              selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true" 
-              || selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true" 
-              ? ''  // Não exibe a imagem se for Mesa Broto ou Mesa Nona
-              : selectedImg  // Exibe qualquer outra imagem
+              selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true"
+                || selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true"
+                ? ''
+                : selectedImg
             } />
           </div>
         </Modal.Body>
@@ -305,4 +344,38 @@ export default function Projeto({ setSelectedItem }) {
                   ))
                 )
               }
-            })}*/
+            })}
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <span class="material-symbols-outlined">
+                    arrow_back_ios
+                  </span>
+                  <img src="https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true" alt="" className="imgCarouselArt" />
+                  <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                  </span>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            */

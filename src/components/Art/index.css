@@ -14,35 +14,6 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
-  .carousel {
-    width: 90vw;
-  }
-
-  .div-img-jhorran img{
-    width: 800px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-    /* .carousel {
-      width: 85vw;
-    } */
-
-    .div-img-jhorran img{
-      width: 500px !important;
-    }
-  }
-  
-@media screen and (max-width: 425px) {
-    /* .carousel {
-      width: 90vw;
-    } */
-
-    .div-img-jhorran img{
-      width: 300px !important;
-    }
-} 
 
 .scroll-component {
   overflow-y: scroll;
@@ -129,7 +100,7 @@
   position: relative;
   top: 50px;
   right: 130px;
-  width: 900px;
+  width: 1000px;
   overflow: hidden;
 }
 
@@ -154,3 +125,121 @@
   border: none;
 }
 
+
+.BodyModalArtDesign{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.modalArtDesign{
+  padding: 30px;
+  width: 1200px;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.material-symbols-outlined{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 559px;
+  cursor: pointer; 
+}
+
+.divCarouselImgArtDesign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgCarouselArt{
+  border-radius: 10px;
+  width: 600px;
+}
+
+.sideTextModal{
+  margin: 10px 0px 0px 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .carousel {
+    width: 90vw;
+  }
+
+  .div-img-jhorran img{
+    width: 800px !important;
+  }
+
+  .modalArtDesign{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  }
+
+  .imgCarouselArt{
+    width: 600px;
+  }
+
+  .material-symbols-outlined{
+    display: flex;
+    height: 559px;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px; 
+  }
+
+  .sideTextModal{
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    /* .carousel {
+      width: 85vw;
+    } */
+
+    .div-img-jhorran img{
+      width: 500px !important;
+    }
+
+    .modalArtDesign{
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+    }
+
+    .imgCarouselArt{
+      width: 300px;
+    }
+
+    .material-symbols-outlined{
+      display: flex;
+      height: 279px;
+      cursor: pointer; 
+    }
+
+    .sideTextModal{
+      margin: 0;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.9rem;
+      padding: 30px;
+    }
+  }
+  
+@media screen and (max-width: 425px) {
+    /* .carousel {
+      width: 90vw;
+    } */
+
+    .div-img-jhorran img{
+      width: 300px !important;
+    }
+} 
