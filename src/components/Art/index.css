@@ -125,16 +125,16 @@
   border: none;
 }
 
-
 .BodyModalArtDesign{
   display: flex;
   justify-content: center;
   align-items: center ;
+  top: 70px;
 }
 
 .modalArtDesign{
   padding: 30px;
-  width: 1200px;
+  width: 1300px;
   display: flex;
   background-color: white;
   border-radius: 20px;
@@ -146,6 +146,7 @@
   align-items: center;
   height: 559px;
   cursor: pointer; 
+  padding: 0px 10px;
 }
 
 .divCarouselImgArtDesign{
@@ -162,6 +163,11 @@
 .sideTextModal{
   margin: 10px 0px 0px 20px;
   font-family: "Raleway", sans-serif;
+}
+
+.divImgQuadros{
+  position: relative;
+  top: 80px;
 }
 
 
@@ -231,6 +237,10 @@
       font-family: "Raleway", sans-serif;
       font-size: 0.9rem;
       padding: 30px;
+    }
+
+    .sideTextModal > h1{
+      font-size: 1.5rem;
     }
   }
   

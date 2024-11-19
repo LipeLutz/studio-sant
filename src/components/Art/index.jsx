@@ -243,7 +243,7 @@ export default function Projeto({ setSelectedItem }) {
             )}
           </div>
 
-          <div>
+          <div className="divImgQuadros">
             <img loading="lazy" width="100%" src={
               selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20BROTO%2001.jpg?raw=true"
                 || selectedImg === "https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/carrosel-arte-e-design/MESA%20NONA%2001.jpg?raw=true"
