@@ -88,9 +88,9 @@ export default function Projeto({ setSelectedItem }) {
         <div className="inner-content">
           <Header handleClick={handleClick} color={"white"} />
 
-          <div className="div-img-jhorran">
-            <img src="https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_ARTE-E-GALERIA_baixa.webp?raw=true" alt="" />
-          </div>
+          {/* <div className="div-img-jhorran">
+            <img src="https://github.com/LipeLutz/imagens-projeto-jhorran/blob/main/principal-webp/jpeg-optimizer_ARTE-E-GALERIA_baixa.webp?raw=true" alt=""/>
+          </div> */}
 
           <Row style={{ minHeight: "48px" }}>
             <Col className="d-flex-justify-space-around p-0 mt-2">

@@ -6,7 +6,6 @@ import Header from "../Header";
 import { motion } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import carouselImage from './Asset/01.jpg'
 import fotos from '../../DATA/fotos.json'
 
 console.log(fotos)
@@ -28,22 +27,6 @@ export default function Projeto({ setSelectedItem }) {
 
         const projetoImgs = fotos.filter((foto) => foto.Categoria === "Projeto")
         setProjetoImages(projetoImgs)
-        /*
-        const response = await axios.get(
-          "https://663e5f4de1913c4767977256.mockapi.io/Imagens"
-        );
-
-        // Filtrando apenas as imagens com a categoria "Carousel"
-        const carouselImgs = response.data.filter(
-          (image) => image.Categoria === "Carousel"
-        );
-        setCarouselImages(carouselImgs);
-        // Filtrando apenas as imagens com a categoria "Projeto"
-        const projetoImgs = response.data.filter(
-          (image) => image.Categoria === "Projeto"
-        );
-        setProjetoImages(projetoImgs);
-        */
       } catch (error) {
         console.error("Error fetching images:", error);
       }
@@ -199,9 +182,8 @@ export default function Projeto({ setSelectedItem }) {
         </Row>
       </motion.div>
       <Modal show={showModal} onHide={closeModal} className="modal-content">
-        <Modal.Body className="teste-modal">
-          {/* <IoClose className="btnModal" onClick={closeModal} /> */}
-          <img src={selectedImg} alt="Imagem" style={{ height: "90vh" }} />
+        <Modal.Body className="modal-projetos">
+          <img src={selectedImg} alt="Imagem" />
         </Modal.Body>
       </Modal>
     </>

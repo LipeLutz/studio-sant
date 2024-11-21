@@ -5,24 +5,6 @@
   max-height: 74vh;
 }
 
-@media screen and (max-width: 1024px) {
-  .carousel {
-    width: 90vw;
-  }
-}
-
-/* @media screen and (max-width: 768px) {
-  .carousel {
-    width: 85vw;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .carousel {
-    width: 90vw;
-  }
-} */
-
 .scroll-component {
   overflow-y: scroll;
   max-height: 88vh;
@@ -107,11 +89,15 @@
   row-gap: 100px;
 }
 
-.teste-modal {
+.modal-projetos {
   display: flex;
   position: relative;
   justify-content: center;
   padding: 0;
+}
+
+.modal-projetos img{
+  height: 90vh;
 }
 
 .modal-content {
@@ -126,3 +112,25 @@
 .modal-footer {
   border: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .carousel {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 90vw;
+  }
+
+  .carousel img{
+    height: 300px;
+  }
+
+  .modal-projetos img{
+    width: 90%;
+    height: 400px;
+  } 
+}
+
